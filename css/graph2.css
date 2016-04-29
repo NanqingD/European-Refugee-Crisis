@@ -1,0 +1,233 @@
+    #probe_line {
+        position: absolute;
+        background-color: #ecf0f1;
+        opacity: 0.8;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+        font-size: 12px;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    #countries path {
+        fill: #7f8c8d;
+        stroke: #2c3e50;
+    }
+    
+    #arcs path {
+        fill: none;
+        stroke: #e67e22;
+        stroke-opacity: .9;
+    }
+    
+    #probe_line strong {
+        font-size: 16px;
+    }
+    
+    #probe_line span {
+        color: #999;
+    }
+    
+    #slider svg {
+
+        border: none;
+    }
+    
+    .svg_2 {
+        border: solid black 1px;
+        background-color: black;
+        opacity: 0.9;
+        width:100%;
+    }
+    
+   
+    #date p {
+        margin: 0;
+        width: 200px;
+    }
+    
+    #map {
+        margin-top: 40px;
+    }
+    
+    .d3-slider-horizontal {
+        height: .2em!important;
+        background-color: #2c3e50;
+    }
+    
+    .d3-slider-axis {
+        height: 20px;
+        width: 1300px;
+    }
+    
+    .d3-slider-handle {
+        position: absolute;
+        width: 1.2em;
+        height: 1.2em;
+        border: 0px solid #d35400;
+        border-radius: 12px!important;
+        background: #e74c3c!important;
+        z-index: 3;
+    }
+    
+    #line_chart {
+        margin-top: 30px;
+    }
+    
+    .d3-slider-handle:hover {
+        background: ##d35400!important;
+        border: 0px solid #af516c;
+    }
+    
+    #date {
+        position: absolute;
+        top: 1370px;
+        left: 20px;
+    }
+    
+    #date p:first-child {
+        color: #ecf0f1;
+        opacity: 0.8;
+        font-size: 8px;
+        line-height: 13px;
+    }
+    
+    #date p#month {
+        font-size: 23px;
+        line-height: 30px;
+        color: #ecf0f1;
+        opacity: 0.8;
+    }
+    
+    #date p#month span {
+        float: left;
+        width: 2.55em;
+    }
+    
+    #info.hidden {
+        display: none;
+    }
+    
+    #lineplot.hidden{
+        display: none;
+    }
+    
+    #info {
+        color: #352841;
+        opacity:0.6;
+        position: absolute;
+        background: #ecf0f1;
+        font-family: Verdana, sans-serif;
+        font-size: 10pt;
+        padding: 3pt;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border: thin solid #aaa;
+        border-radius: 6px;
+        -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    
+    #play_pause.button {
+        position: absolute;
+        top: 1155px;
+        left:0%;
+
+            -moz-box-shadow: inset 0px 3px 15px 3px #23395e;
+            -webkit-box-shadow: inset 0px 3px 15px 3px #23395e;
+            box-shadow: inset 0px 3px 15px 3px #23395e;
+            background-color: transparent;
+            -moz-border-radius: 11px;
+            -webkit-border-radius: 11px;
+            border-radius: 11px;
+            display: inline-block;
+            cursor: pointer;
+            color: #ecf0f1;
+            opacity: 0.8;
+            font-size: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #263666;
+            margin: 10px 25px;
+        
+    }
+    
+    
+   
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    
+    path.outline-iraq {
+        fill: none;
+        stroke-width: 2px;
+        stroke: #e74c3c;
+    }
+    
+    path.outline-syria {
+        fill: none;
+        stroke-width: 2px;
+        stroke: #3498db;
+    }
+    
+    path.outline-afghan {
+        fill: none;
+        stroke-width: 2px;
+        stroke: #1b9e77;
+    }
+    
+    .axis-popup path {
+        fill: none;
+        stroke: #ecf0f1;
+        opacity: 0.8;
+    }
+    
+    .axis-popup line {
+        stroke: #ecf0f1;
+        opacity: 0.8;
+    }
+    
+    .axis-popup text {
+        font-size: 6pt;
+        fill: #ecf0f1;
+        opacity: 0.8;
+    }
+    
+    .popupLabel {
+        font-size: 8pt;
+        stroke-width: 0.3px;
+    }
+
+     .line-graph_1-x .tick line{
+        stroke:none;
+        fill:none;
+    }
+
+    .line-graph_1-x text{
+        stroke:none;
+        fill:none;
+        font-size: 10pt;
+    }
+    
+    .line-graph_1-y path{
+        stroke:#ecf0f1;
+        opacity: 0.8;
+        fill:none;
+    }
+    .line-graph_1-y .tick line{
+        stroke:#ecf0f1;
+        opacity: 0.8;
+        fill:none;
+    }
+     .line-graph_1-y text{
+        opacity: 0.8;
+        fill:#ecf0f1;
+        font-size: 10pt;
+    }
+    

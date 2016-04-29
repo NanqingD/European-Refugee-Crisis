@@ -1,0 +1,147 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<!--     - - - - - - - - for part 1 and 3    - - - - - - - -  -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/css1_3.css" type="text/css" />
+
+<!--        - - - - - - - - for part 2    - - - - - - - - -   -->
+
+ <link rel="stylesheet" type="text/css" href="css/d3.slider.css"/>
+ <link rel="stylesheet" type="text/css" href="css/graph2.css"/>
+ <script src="http://d3js.org/d3.v3.min.js"></script>
+ <script src="Lib/topojson.js"></script>
+ <script src="Lib/d3.slider.js"></script>
+ <script src="Lib/jquery-1.10.2.min.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+});
+
+function loadFunction(){
+	$("#headpic").fadeTo("10000",0.4);
+	window.setTimeout(show_1,1000);
+}
+function show_1(){
+	$("#div2").css("visibility","visible");
+}
+
+</script>
+</head>
+
+<body onload="loadFunction()">
+
+<!--        - - - - - - - - part 1    - - - - - - - - -   -->
+<div id="div1">
+
+	<img src="headpic.jpg"  id = "headpic" alt="title" class = "headpic_1" style = "opacity:1"/>
+
+	<p class = "headtext_1">
+			EUROPEAN REFUGEE CRISIS
+	<p>
+
+
+	<div id = "div2" style = "visibility:hidden">
+		<div id = "image_explian" class = "image_exp" style = "visibility:hidden"> 
+
+		</div>
+
+		<div id = "div3">
+			<button class = "myButton_1" onclick = "move_man(2010)">2010</button>
+			<button class = "myButton_1" onclick = "move_man(2011)">2011</button>
+			<button class = "myButton_1" onclick = "move_man(2012)">2012</button>
+			<button class = "myButton_1" onclick = "move_man(2013)">2013</button>
+			<button class = "myButton_1" onclick = "move_man(2014)">2014</button>
+			<button class = "myButton_1" onclick = "move_man(2015)">2015</button>
+			
+		</div>
+		<div id ="euromap">
+			<img src="europe.png"  id = "europic" alt="title" class = "euro_pic" style = "opacity:1"/>
+			<p id = "entering_Text" class = "entering_Text">
+				There are millions of refugees coming to Europe every year. But in <font style = "color:#d35400"> 2015 </font> Europe witnessed a surge of refugees. <font style = "color:#d35400"> Click the buttons </font> down here to see the increase in the number of people getting into Europe over the years.
+			</p	>
+
+		</div>
+
+	</div>
+
+	<div id = "exp_text_12" style = "visibility:hidden">
+		As we witnessed a sharp growth in the number of refugess in 2015, we wanted to analyze the top three countries 
+		from where the refugees are coming which are: <br/>
+		<font style = "color: #d35400"> Syria, Afghanisdhan, and Iraq.</font>
+	</div>
+
+
+</div>
+
+
+
+
+
+<div id = "tras_text1_2" class = "trans_Text">
+	<hr/>
+	<p class = "tx1">The Flow Towards Europe</p>
+	<p class = "tx2"> The following visualization depicts the flow of refugees into Europe from	Syria, Afghanistan and Iraq. Each dot in the map represents 300 people who are seeking asylum in Europe.
+	<hr/>
+</div>
+
+<!--        - - - - - - - - part 2    - - - - - - - - -   -->
+
+ <div id="line_chart"></div>
+
+    <input type="button" id="play_pause" onclick="animation_update()" class="button" value="PLAY"></input>
+
+    <div id="slider"> </div>
+
+    <div id="map"></div>
+
+    <div id="date" style="{margin-left: 0px}">
+        <p id="month">JAN 2010</p>
+    </div>
+
+    <div id="info" class="hidden"></div>
+ 	
+
+
+
+
+<!--        - - - - - - - -  part 3    - - - - - - - - -   -->
+<div id = "tras_text1_2" class = "trans_Text">
+	<hr/>
+	<p class = "tx1"> Economic Trends <font style = "font-size:30px; color: #d35400">vs </font>Asylum Seekers</p>
+	<p class = "tx2"> This line plot visualizes the relationship between the economies of the affected countries and the number of asylum seekers.
+	<hr/>
+</div>
+<div id = "lineplot">
+	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	<div id = "economics"></div>
+	<div id="buttons">
+		<input id="syriaButton" class="myButton_1 bt2" type="button" value="Syria" onclick="changeToSyria()"/>
+	    <input id="afghanButton" class="myButton_1 bt2" type="button" value="Afghanistan" onclick="changeToAfghan()"/>
+	    <input id="iraqButton" class="myButton_1 bt2" type="button" value="Iraq" onclick="changeToIraq()"/>
+	</div>
+
+</div>
+
+<div class = "tx2">
+	<hr/>
+	DataSource: <br/>
+	1 United Nations High Commissioner for Refugees http://www.unhcr.org/cgi-bin/texis/vtx/home <br/>
+	2 http://data.worldbank.org/country
+</div>
+
+<script src="js/head.js"></script>
+<script src="js/part3.js"></script>
+<script src="js/part2.js"></script>
+
+</body>
+
+
+
+</html>

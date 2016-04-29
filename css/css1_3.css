@@ -1,0 +1,255 @@
+body {
+  font: 10px;
+  font-family: "Josefin-Sans";
+  background:black;
+}
+
+#div1{
+  width:100%;
+  height:900px;
+  background: black;
+}
+#div2{
+  	position:absolute;
+  	top:200px;
+  	left:17%;
+  	width:65%;
+ 	height:480px;
+  	background: black;
+  	opacity:0.6;
+}
+#div3{
+	position:absolute;
+  	top:400px;
+}
+#lineplot{
+	background:black;
+	opacity:0.9;
+	height:680px;
+}
+.headpic_1{
+	width:100%;
+	height:900px;
+}
+.euro_pic{
+	width:50%;
+	height:200px;
+	opacity:1;
+	position:absolute;
+	left:-200px;
+	top:80px;
+	margin-left:50%;
+
+
+}
+.svg1{
+	position:absolute;
+	margin-top:100px;
+	height:500px;
+	width:900px;
+}
+.headtext_1{
+	position:absolute;
+	top:30px;
+	font-size: 60px;
+	height:5px;
+	margin-left: 50%;
+	left:-400px;
+	font-weight: bold;
+	color:#ecf0f1;
+	text-shadow: 0px 0px 15px #888;
+}
+.image_exp{
+	position:absolute;
+	top:0px;
+	margin-left:4%;
+	height:150px;
+	width: 65%;
+}
+
+.entering_Text{
+	text-align: center;
+	color:#7f8c8d;
+	margin-top:310px;
+	width:70%;
+	margin-left:15%;
+
+}
+.imgman{
+	width:40px;
+	height:100px;
+}
+
+.man1{
+	fill:#7f8c8d;
+}
+.man2{
+	fill:#d35400;
+	opacity: 0.6;
+}
+
+.myButton_1 {
+	-moz-box-shadow:inset 0px 3px 15px 3px #23395e;
+	-webkit-box-shadow:inset 0px 3px 15px 3px #23395e;
+	box-shadow:inset 0px 3px 15px 3px #23395e;
+	background-color:transparent;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+	margin: 10px 25px;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:2px;
+}
+
+.bt2{
+	padding:15px 70px;
+	margin-left:0px;
+	margin-right:40px;
+	margin-bottom:80px;
+
+
+}
+#buttons{
+	position: absolute;
+	left: 50%;
+	margin-left:-340px;
+}
+
+.img_text_org{
+	fill:#d35400;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.img_text_white{
+	fill:#7f8c8d;
+	font-size:20px;
+	font-weight:bold;
+
+}
+
+
+	.svg_3 { 
+		margin: 10px 30px;
+		margin-left:auto; 
+		margin-right:auto; 
+		display:block;
+	}
+
+	rect {
+		fill: #34495e;
+		border: solid #34495e 1px; 
+		box-shadow: 10px 10px 5px #888888;
+		border-radius:25px;
+
+	}
+	
+	.axis path { 
+		fill: none; 
+		stroke: #ecf0f1;
+		stroke-width:3px; 
+	}
+	
+	.axis line { stroke: #ecf0f1; }
+	.axis text { 
+		font: #ecf0f1;
+		font-size: 15px; }
+	
+	path.plot { 
+		fill: none; 
+		stroke-width: 3; 
+	}
+
+	text.uPoint .gPoint .iPoint .mPoints {
+		fill: black;
+		opacity: 0.8;
+		font-size: 25px;
+		text-anchor: middle;
+	}
+
+	.plottext{
+		fill:#ecf0f1;
+		font-size:20px;
+	}
+	.tick{
+		fill:#ecf0f1;
+	}
+
+	.d3-tip {
+  		line-height: 1;
+  		font-weight: bold;
+  		padding: 12px;
+  		background: rgba(0, 0, 0, 0.8);
+  		color: #ecf0f1;
+  		opacity:0.8;
+  		border-radius: 2px;
+  		text-align: center;
+	}
+
+	
+	line.legend {
+		stroke-width:10pt;
+	}
+
+	text.legend{
+		fill:#ecf0f1;
+		font-size: 15px;
+		opacity:0.8;
+	}	
+
+	.label{
+		fill:#ecf0f1;
+		opacity:0.8;
+		font-size:45px;
+		text-anchor: center;
+		font-weight:bold;
+
+	}
+
+#title_3{
+	font-size:30px;
+	fill:#d35400;
+}
+
+#exp_text_12{
+	width:65%;
+	position:absolute;
+	top:725px;
+	left:50%;
+	margin-left: -450px;
+	font-size:20px;
+	color:#7f8c8d;
+	text-align: center;
+}
+
+#tras_text1_2{
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	color:#ecf0f1;
+	opacity:0.8;
+	text-shadow: 0px 0px 15px #888;
+	opacity:0.7;
+
+}
+
+.tx2{
+	font-size:15px;
+	width:70%;
+	margin-left:15%;
+	color:#ecf0f1;
+	opacity:0.8;
+}
+
